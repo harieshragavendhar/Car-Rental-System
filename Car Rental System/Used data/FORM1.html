@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1{
+            color: rgb(240, 72, 72);
+            text-align: center;
+            text-decoration: underline;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            padding: 8px;
+        }
+        .container{
+            background-color: rgb(229, 234, 239);
+            padding: 5px;
+            border: 2px solid rgb(214, 214, 214);
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea{width: 100%;
+            border: 2px solid aliceblue;
+            margin: 5px;
+
+        }
+        fieldset{
+            background-color: rgb(252, 252, 252);
+            border: 2px solid aliceblue;
+        }
+        input[type="submit"]{
+            background-color: rgb(0, 185, 96);
+            color: aliceblue;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 6px;
+
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(52, 236, 6);
+        }
+        #car_type option{
+    color: rgb(0, 0, 0);
+    background-color: rgb(225, 225, 225);
+}
+
+
+    </style>
+  </head>
+  <body> <nav class="container">
+    <form action="">
+      <h1>Payment Form</h1><hr><hr>
+      <h2>User Information</h2>
+      <p>
+        Firstname: <input type="text" name="fname" required  /><br /><br />
+        Lastname: <input type="text" name="lname" /><br /><br />
+      </p>
+      <fieldset>
+        <legend >Gender </legend>
+        <p>
+          Male <input type="radio" name="gender" id="male" required/> Female
+          <input type="radio" name="gender" id="female" required/> Other
+          <input type="radio" name="gender" id="other"required />
+        </p>
+      </fieldset>
+      <p>
+        Address:
+        <textarea name="address" id="address" cols="100" rows="8" placeholder="Type your address"></textarea>
+      </p>
+      <p>Email: <input type="email" name="email" id="email" required placeholder="abc123@gmail.com"/></p>
+      <p>Pincode: <input type="number" name="pincode" id="pincode" required placeholder="123456"/></p>
+      <p>
+        CAR type:
+        <select name="car_type" id="car_type" required>
+          <option value="">--select a car type--</option>
+          <option value="FORTUNER">FORTUNER</option>
+          <option value="SCORPIO">SCORPIO</option>
+          <option value="AUDI">AUDI</option>
+          <option value="MERCEDES">MERCEDES</option>
+          <option value="SWIFT">SWIFT</option>
+          <option value="Creta">Creta</option>
+        </select>
+      </p>
+      <hr />
+      
+      <h2>Payment Information</h2>
+      
+      <p>
+        Card type:
+        <select name="card_type" id="card_type" required>
+          <option value="">--select a card type--</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">Rupay</option>
+          <option value="mastercard">Mastercard</option>
+        </select>
+      </p>
+      <p>Card Number <input type="number" name="card_number" id="card_number" required  placeholder="1111 2222 3333 4444"></p>
+      <p>
+        Expiration Date: <input type="date" name="exp_date" id="exp_date" required>
+      </p>
+      <p>
+        CVV: <input type="password" name="cvv" id="cvv" required placeholder="***" >
+        <p>
+            <input type="submit" value="Pay Now">
+        </p>
+      </p>
+    </form> </nav>
+  </body>
+</html>

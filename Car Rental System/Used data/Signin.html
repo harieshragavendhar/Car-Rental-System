@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    
+    <title>User Information</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1{
+            color: rgb(240, 72, 72);
+            text-align: center;
+            text-decoration: underline;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            padding: 8px;
+        }
+        .container{
+            background-color: rgb(254, 255, 208);
+            padding: 5px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        select,
+        textarea{width: 100%;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 5px;
+
+        }
+        fieldset{
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(0, 0, 0);
+        }
+        input[type="submit"]{
+            background-color: rgb(0, 185, 96);
+            color: aliceblue;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 6px;
+
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(52, 236, 6);
+        }
+
+
+    </style>
+  </head>
+  <body> <nav class="container">
+    <form action="">
+      <h1>User Information</h1><hr><hr>
+     
+      <p>
+        Firstname: <input type="text" name="fname" required  /><br /><br />
+        Lastname: <input type="text" name="lname" /><br /><br />
+      </p>
+      <fieldset>
+        <legend >Gender </legend>
+        <p>
+          Male <input type="radio" name="gender" id="male" required/> Female
+          <input type="radio" name="gender" id="female" required/> Other
+          <input type="radio" name="gender" id="other"required />
+        </p>
+      </fieldset>
+      <p>
+        Address:
+        <textarea name="address" id="address" cols="100" rows="8" placeholder="Type your address"></textarea>
+      </p>
+      <p>Email: <input type="email" name="email" id="email" required placeholder="abc123@gmail.com"/></p>
+      <p>Pincode: <input type="number" name="pincode" id="pincode" required placeholder="123456"/></p>
+      <p>
+        <input type="submit" value="Submit">
+    </p>
+      <hr />
+      
+  </body>
+</html>
